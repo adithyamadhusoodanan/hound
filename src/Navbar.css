@@ -1,0 +1,227 @@
+:root {
+  box-sizing: border-box;
+
+  --primary: #fff;
+  --secondary: #000;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+  z-index: 100000;
+  /* position: relative; */
+}
+
+.nav-brand {
+  width: 140px;
+  /* margin: 2rem; */
+}
+
+.nav-brand img {
+  width: 100%;
+}
+
+.hamburger {
+  --hm-width: 3em;
+  --hm-height: 0.2em;
+  --spacing: calc(var(--hm-width) / 4);
+
+  width: var(--hm-width);
+  height: var(--hm-height);
+  background-color: var(--primary);
+  position: relative;
+  transition: transform 0.8s ease-in-out;
+
+  z-index: 100000;
+}
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  width: 50%;
+  height: inherit;
+  background-color: var(--primary);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.8s ease-in-out;
+}
+.hamburger::after {
+  top: calc(-1 * var(--spacing));
+}
+.hamburger::before {
+  top: var(--spacing);
+  left: 50%;
+}
+
+.close.hamburger::before,
+.close.hamburger::after {
+  left: 50%;
+  transform: translate(-50%) rotate(-450deg);
+  background-color: white;
+}
+.close.hamburger {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+nav {
+  position: absolute;
+  background-color: var(--secondary);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: scaleX(0);
+  transform-origin: left center;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in;
+  z-index: 10000;
+}
+
+.reveal-nav {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.menu {
+  list-style: none;
+}
+.menu-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: calc(1.5rem + 2vw);
+  opacity: 0;
+  transform: translate(-20em);
+  display: block;
+  transition: transform 0.8s ease-in-out, opacity 0.3s ease-in;
+}
+.menu li + li {
+  margin-top: 1em;
+}
+
+.reveal-items .menu-item {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.reveal-items li:nth-child(1) .menu-item {
+  transition-delay: 0.1s;
+}
+.reveal-items li:nth-child(2) .menu-item {
+  transition-delay: 0.2s;
+}
+
+.reveal-items li:nth-child(3) .menu-item {
+  transition-delay: 0.3s;
+}
+
+.reveal-items li:nth-child(4) .menu-item {
+  transition-delay: 0.4s;
+}
+
+.reveal-items li:nth-child(5) .menu-item {
+  transition-delay: 0.5s;
+}
+
+.reveal-items li:nth-child(6) .menu-item {
+  transition-delay: 0.6s;
+}
+
+/* nav {
+  position: relative;
+  z-index: 10000;
+}
+.nav-brand {
+  width: 140px;
+  margin: 2rem;
+}
+
+.nav-brand img {
+  width: 100%;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+  background-color: rgb(206, 206, 206);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+  background-color: rgb(206, 206, 206);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: rgb(206, 206, 206);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 2.4rem;
+  right: 2rem;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #000;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #00ffa4;
+  font-family: "BwGradual", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  border-bottom: 1px solid #fff;
+}
+.menu__item:hover {
+  background-color: #00ffa4;
+  color: #000;
+} */
