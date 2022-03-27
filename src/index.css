@@ -1,13 +1,27 @@
+@font-face {
+  font-family: "Helvetica";
+  src: local("HelveticaNeue"),
+    url(./assets/fonts/HelveticaNeue.ttc) format("ttc");
+  /* src: url(./assets/fonts/HelveticaNeue.ttc); */
+}
+
+@font-face {
+  font-family: "BwGradual";
+  src: local("BwGradual"),
+    url(./assets//fonts/BwGradual-Medium.otf) format("opentype");
+  /* src: url(./assets//fonts/BwGradual-Medium.otf); */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif, "BwGradual";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

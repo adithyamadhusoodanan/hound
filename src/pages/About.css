@@ -1,0 +1,396 @@
+.aboutLanding {
+  position: relative;
+}
+
+.aboutLanding header {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.about-landing {
+  width: 100%;
+  /* min-height: 100vh; */
+  text-align: center;
+  position: relative;
+}
+
+.about-landing img {
+  width: 100%;
+  height: 85vh;
+  /* height: 405px; */
+  object-fit: cover;
+}
+
+.about-landing h1 {
+  font-family: BwGradual;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 3.4rem;
+  color: var(--main-theme-color);
+  position: absolute;
+  /* top: 55%; */
+  top: 47%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 861px;
+  /* margin: 0 auto; */
+}
+
+.about-landing p {
+  font-style: italic;
+  /* font-size: 1.5rem; */
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 2rem auto;
+  color: black;
+}
+
+/* Landing Page Responsive */
+@media screen and (max-width: 700px) and (min-width: 430px) {
+  .about-landing h1 {
+    font-size: 2.4rem;
+    top: 12rem;
+    max-width: 510px;
+  }
+  .about-landing img {
+    height: 308px;
+  }
+  .about-landing p {
+    font-size: 1rem;
+  }
+}
+@media screen and /* (max-width: 400px) */ (max-width: 430px) {
+  .about-landing h1 {
+    /* top: 50%; */
+    top: 10rem;
+    /* font-size: 2rem; */
+    font-size: 2rem;
+    /* padding: 0 0.4rem; */
+    width: 264px;
+  }
+  .about-landing p {
+    font-size: 1rem;
+    width: 69%;
+  }
+}
+@media screen and (max-width: 812px) {
+  .about-landing br {
+    display: none;
+  }
+}
+
+/* story container */
+.story-container {
+  /* width: 100%; */
+  /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+  background-color: black;
+  position: relative;
+}
+
+/* .right-split {
+    flex: 1; */
+/* width: 50%; */
+/* padding: 0 6rem 0 4rem; */
+/* } */
+
+.right-text-cont h1 {
+  color: #00ffa8;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+
+.right-text-cont p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #fff;
+  /* line-height: 30px; */
+}
+
+/* .left-split { */
+/* flex: 1; */
+/* margin-right: 5rem; */
+
+/* .left-split .img{ */
+/* display: inherit; */
+/* width: 100%; */
+
+/* .left-split .imageB{
+    display: none;
+  } */
+/* .left-split .imageB{
+    display: none;
+  } */
+.imageB {
+  display: none;
+}
+.imageA {
+  width: 100%;
+}
+.right-text-cont {
+  position: absolute;
+  top: 16%;
+  width: 300px;
+  right: 14px;
+}
+.right-text-cont h1 {
+  font-size: 2.3rem;
+}
+.right-text-cont p {
+  font-size: 1rem;
+}
+/* Story Responsive */
+@media screen and /* (max-width: 400px) */ (max-width: 430px) {
+  .story-container {
+    /* flex-direction: column; */
+    /* margin: 5rem 0; */
+  }
+
+  .right-text-cont {
+    margin-top: 0.9rem;
+    padding: 0 1.4rem;
+    position: absolute;
+    top: 7px;
+    width: auto;
+  }
+  .story-container .left-split .imageA {
+    display: none;
+  }
+  .imageB {
+    width: 100%;
+    display: initial;
+  }
+
+  .right-text-cont h1 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  .right-text-cont p {
+    font-size: 0.87rem;
+  }
+}
+
+/* Team Gallery */
+.team.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team .galleryItem {
+  width: 50%;
+}
+
+.team .galleryItem img {
+  width: 100%;
+  display: block;
+}
+
+.gallery-item-text {
+  display: none;
+  /* visibility:collapse; */
+}
+
+/* Team Gallery Responsive */
+@media screen and /* (max-width: 420px) */ (max-width: 450px) {
+  .team .galleryItem {
+    width: 100%;
+    background-color: black;
+    height: 136vw;
+  }
+  .item1 {
+    display: none;
+  }
+  .team .galleryItem img {
+    margin: auto;
+    /* margin-top: 76px;
+      margin-bottom: 177px; */
+    width: 71%;
+    margin-top: 2rem;
+  }
+  .gallery-item-text {
+    display: inherit;
+    margin: auto;
+    width: 6em;
+  }
+  .gallery-item-text h1 {
+    font-size: 1.5em;
+
+    margin-top: 0.9rem;
+  }
+  .btn {
+    display: initial;
+  }
+  .gallery-btn {
+    left: -35px;
+    width: 11em;
+    margin: 40px 0 0;
+    border: 1px solid #fff;
+  }
+  .gallery-btn:before,
+  .gallery-btn > :first-child:before {
+    border-color: #fff;
+  }
+  .gallery-btn a {
+    color: #fff;
+    font-size: 0.8em;
+  }
+}
+
+/* FAQ */
+
+.about-faq-container {
+  width: 100%;
+  margin: 4rem 0;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+
+.faq-left-split {
+  margin: 0 2rem;
+  flex: 1;
+}
+
+.faq-right-split {
+  margin: 32px 1rem;
+  align-self: flex-end;
+}
+.faq-right-split p {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.faq-title h1 {
+  font-family: BwGradual;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.faq-content ul {
+  margin: 2rem 0;
+  list-style-position: inside;
+  list-style: none;
+}
+
+.faq-content li {
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.faq-content li::before {
+  content: "+";
+  margin-right: 4px;
+}
+.about-faq-container .btn {
+  background-color: white;
+  border-color: black;
+}
+
+.about-faq-container .btn a {
+  color: black;
+}
+
+.about-faq-container .btn:before,
+.about-faq-container .btn > :first-child:before {
+  border-color: black;
+}
+
+.faq-cont {
+  margin: 12px 0;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-style: italic;
+  font-family: BwGradual;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #fff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+/* .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  } */
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  margin: 0 0 10px 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  font-size: 12px;
+}
+
+.accordion:before {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #000;
+  /* float: right; */
+  margin-right: 5px;
+}
+
+.active:before {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* FAQResponsive */
+@media screen and /* (max-width: 420px) */ (max-width: 450px) {
+  .about-faq-container {
+    flex-direction: row;
+  }
+  .faq-left-split {
+    margin: 0 0 0 1rem;
+  }
+
+  .faq-right-split {
+    margin: 0px;
+    align-self: flex-end;
+  }
+  .faq-left-split h1 {
+    font-size: 1.5rem;
+  }
+  .faq-content li {
+    font-size: 0.8rem;
+  }
+  .faq-right-split p {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
+  .faq-btn {
+    left: 2px;
+    top: -26px;
+    width: 8em;
+    padding: 6px 8px;
+  }
+}

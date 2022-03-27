@@ -1,0 +1,529 @@
+.homeLanding {
+  position: relative;
+}
+
+.homeLanding header {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.carousel-landing {
+  height: 80vh;
+  z-index: 1;
+}
+
+.carousel-landing img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.carousel-root {
+  height: 100%;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.sideline {
+  position: absolute;
+  top: 45%;
+  right: -80px;
+  z-index: 1000;
+  transform: rotate(-90deg);
+}
+
+.sideline p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.messageBox {
+  position: absolute;
+  right: 0;
+  margin-top: -70px;
+  z-index: 100;
+  width: 40%;
+}
+
+.messageBoxContainer {
+  background-color: #ffffff;
+  padding: 2rem 1rem 2rem 5rem;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-right: none;
+}
+
+.messageBoxContainer p {
+  color: #000;
+  font-style: italic;
+  border-color: black;
+  font-size: 16px;
+}
+
+.btn {
+  position: relative;
+  border: 1.5px solid #000;
+  /* border-left: 5px solid; */
+  margin: 20px 0 0;
+  padding: 8px 24px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn a {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 12px;
+  color: #00ffa8;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:before,
+.btn > :first-child:before {
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  border-color: #00ffa8; /* or whatever colour */
+  border-style: solid; /* or whatever style */
+  content: " ";
+  transition: all 0.5s ease-in-out;
+}
+.btn:before {
+  top: -2px;
+  left: -2px;
+  border-width: 3px 0 0 3px;
+}
+/* .btn:after {top:0;right:0;border-width: 3px 3px 0 0} */
+.btn > :first-child:before {
+  bottom: -2px;
+  right: -2px;
+  border-width: 0 3px 3px 0;
+}
+/* .btn>:first-child:after {bottom:0;left:0;border-width: 0 0 3px 3px} */
+
+.btn:hover:before,
+.btn:hover > :first-child:before,
+.btn:hover a {
+  width: 60px;
+  height: 20px;
+  font-size: 12.8px;
+  /* transition: ; */
+}
+
+/* Landing Page Responsive */
+@media screen and (max-width: 420px) {
+  #nav-icon1 {
+    top: 1.8rem;
+    right: 1rem;
+  }
+
+  .nav-brand {
+    width: 130px;
+    margin: 1.4rem 1rem;
+  }
+
+  .sideline {
+    right: -90px;
+  }
+
+  .messageBox {
+    display: none;
+  }
+}
+
+/* bikes */
+
+.bikesMain {
+  width: 100%;
+  /* margin-bottom: 5rem; */
+}
+
+.bikesTitle {
+  margin: 2rem 2rem 5rem;
+}
+
+.bikesTitle h1 {
+  font-family: "BwGradual";
+  font-size: 3.4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+
+.videoContainer {
+  margin: 0rem 0 0;
+}
+
+.videoContainer img {
+  width: 100%;
+}
+
+.bikeSplitContainer {
+  padding: 5rem 0 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: black; */
+  background: #e1e1e1;
+  flex-wrap: wrap;
+}
+
+.bikeCard {
+  width: 400px;
+  text-align: center;
+}
+
+.cardImg {
+  width: 400px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: #000;
+}
+
+.cardImg img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  display: block;
+}
+
+.cardImg:before,
+.cardImg > :first-child:before {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  border-color: #fff; /* or whatever colour */
+  border-style: solid; /* or whatever style */
+  content: " ";
+  transition: all 0.5s ease-in-out;
+}
+.cardImg:before {
+  top: -2px;
+  left: -4px;
+  border-width: 4px 0 0 4px;
+}
+.cardImg > :first-child:before {
+  bottom: -2px;
+  right: -3px;
+  border-width: 0 4px 4px 0;
+}
+
+.cardImg:hover:before,
+.cardImg:hover > :first-child:before {
+  width: 30%;
+  height: 30%;
+}
+
+.cardImg:hover img {
+  transform: scale(0.98);
+}
+
+.bikeCard .cardContent {
+  padding: 0 0rem;
+}
+
+.bikeCard .cardContent h1 {
+  font-family: "BwGradual";
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: bolder;
+  /* color: #00ffa8; */
+  color: black;
+  margin: 1.6rem;
+}
+
+.bikeCard .cardContent p {
+  font-style: italic;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.bikeSplitContainer .btn {
+  border-color: #fff;
+}
+
+.bikeSplitContainer .btn a {
+  color: #fff;
+}
+
+.bikeSplitContainer .btn:before,
+.bikeSplitContainer .btn > :first-child:before {
+  border-color: #fff;
+}
+
+/* Bikes Responsive */
+@media screen and (max-width: 420px) {
+  .bikesTitle {
+    margin: 2rem 1rem;
+  }
+
+  .bikesTitle h1 {
+    font-size: 1.5rem;
+  }
+
+  .cardImg {
+    width: 80vw;
+  }
+
+  .bikeCard {
+    width: 80vw;
+    margin-bottom: 3rem;
+  }
+
+  .bikeSplitContainer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding:  1rem; */
+  }
+}
+
+/* indicator*/
+.indicator {
+  background: #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+}
+.indicator-img {
+  float: left;
+  width: 70%;
+}
+.indicator-img img {
+  height: 100%;
+  width: 100%;
+}
+.indicator-content {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  position: relative;
+  bottom: 3.7rem;
+  height: 100%;
+}
+.indicator h1 {
+  width: 250px;
+  height: 80px;
+  text-align: left;
+  margin-left: 1.8rem;
+  font-family: "BwGradual";
+  font-style: italic;
+  font-weight: 100000;
+  font-size: 2.4rem;
+  line-height: 90%;
+  color: #000000;
+}
+.indicator h2 {
+  width: 250px;
+  height: 40px;
+  text-align: left;
+  margin-left: 1.8rem;
+  font-family: "BwGradual";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #000000;
+}
+#indicator-text {
+  width: 240px;
+  height: 56px;
+  margin-left: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-family: "BwGradual";
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #000000;
+}
+.indicator-button {
+  width: 120px;
+  height: 30px;
+  margin-left: 1.8rem;
+  padding: 3.3px 8px 6px 8px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.indicator-button button {
+  background-color: black;
+  border: 2px solid black;
+}
+.indicator-button a {
+  font-family: "BwGradual";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.6rem;
+  color: white;
+}
+
+/* indicator responsive */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .indicator-content {
+    position: relative;
+    bottom: 1.5rem;
+    height: 174px;
+  }
+  .indicator h1 {
+    font-size: 1.7rem;
+    width: 170px;
+    height: 50px;
+  }
+  .indicator h2 {
+    height: 20px;
+    width: 300px;
+    font-size: 1rem;
+    margin-top: 0.1rem;
+  }
+  #indicator-text {
+    height: 70px;
+    width: 240px;
+    font-size: 0.6rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.5rem;
+  }
+  .indicator-button {
+    width: 90px;
+    height: 25px;
+    padding-top: 1px;
+    margin-top: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .indicator {
+    flex-direction: column;
+  }
+  .indicator-img {
+    width: 100%;
+  }
+  .indicator-content {
+    width: 300px;
+    position: relative;
+    bottom: 1rem;
+    height: 230px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .indicator h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    height: 30px;
+    margin: 1.8rem 0px 0.3rem 0px;
+  }
+  .indicator h2 {
+    text-align: center;
+    height: 20px;
+    font-size: 1.2rem;
+    margin: 0px;
+  }
+  #indicator-text {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 1rem 0px;
+    height: 90px;
+  }
+  .indicator-button {
+    align-self: center;
+    height: 25px;
+    width: 90px;
+    padding-top: 0rem;
+    margin: 0px 0px 1rem 0px;
+  }
+}
+
+/* Image Gallery */
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galleryItem {
+  width: 25%;
+}
+
+.galleryItem img {
+  width: 100%;
+  display: block;
+}
+
+/* Image Gallery Responsive */
+@media screen and (max-width: 420px) {
+  .galleryItem {
+    width: 50%;
+  }
+}
+
+/* FOoter */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 2rem 4rem;
+  border-top: 15px solid #00ffa8;
+  background-color: #2a2c2a;
+  flex-wrap: wrap;
+}
+
+footer p,
+footer h1 {
+  color: #fff;
+}
+
+.footer-item {
+  font-style: italic;
+  margin: 1rem 2rem;
+}
+
+.footer-item h1 {
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.footer-item a {
+  display: block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.footer-socials {
+  margin-top: 4rem;
+  font-style: italic;
+}
+
+.footer-socials .icons-cont {
+  margin-top: 10px;
+}
+
+.footer-socials .icons-cont img {
+  margin-right: 5px;
+}
+
+/* Footer Responsive */
+
+@media screen and (max-width: 420px) {
+  footer {
+    flex-direction: column;
+  }
+
+  #footer-log {
+    width: 200px;
+  }
+
+  .footer-socials {
+    margin: 2rem 0;
+  }
+
+  .footer-item {
+    margin: 1rem 0rem;
+  }
+}

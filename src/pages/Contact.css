@@ -1,0 +1,222 @@
+.contactLanding {
+  position: relative;
+}
+
+.contactLanding header {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contact-landing {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.contact-landing img {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.contact-landing h1 {
+  font-family: BwGradual;
+  font-style: italic;
+  font-weight: 900;
+  /* font-size: 4rem; */
+  font-size: 2.7rem;
+  color: var(--main-theme-color);
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  /* margin: 0 auto; */
+}
+
+.contact-landing h2 {
+  font-family: BwGradual;
+  font-style: italic;
+  font-weight: 900;
+  /* font-size: 4rem; */
+  font-size: 2.7rem;
+  color: var(--main-theme-color);
+  position: absolute;
+  /* top: 55%; */
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: #ffffff;
+  /* margin: 0 auto; */
+}
+
+/* Landing Page Responsive */
+@media screen and /* (max-width: 400px) */ (max-width: 495px) {
+  .contact-landing h1 {
+    top: 43%;
+    font-size: 1.9rem;
+    padding: 0 2rem;
+  }
+
+  .contact-landing h2 {
+    /* top: 50%; */
+    top: 80%;
+    font-size: 1.9rem;
+    padding: 0 2rem;
+  }
+}
+
+/* contact section */
+.contact-container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  color: black;
+  font-family: BwGradual;
+}
+
+.contact-container .contact-left-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.contact-container .contact-left-cont > * {
+  margin-bottom: 2rem;
+}
+
+.contact-container .contact-left-cont h1 {
+  color: black;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.contact-container .contact-left-cont p {
+  font-size: 1rem;
+}
+
+.contact-container .contact-right-cont {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-containter {
+  background-color: #fff;
+  width: 75%;
+  padding: 2rem;
+}
+
+.form-containter h3 {
+  /* padding: 2rem 2rem 0 2rem; */
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+.form-containter form {
+  font-style: italic;
+  display: block;
+  /* padding: 2rem; */
+}
+
+.form-containter label {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.form-containter input {
+  width: 100%;
+  /* height: 3em; */
+  height: 2em;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  font-size: 15px;
+  /* margin: 10px 0; */
+  margin: 5px 0px 30px 0px;
+  padding: 0 12px;
+}
+
+.form-containter form textarea {
+  width: 100%;
+  margin: 5px 0 30px 0;
+}
+
+.form-containter input:focus {
+  outline: none;
+  border: 2px solid #000;
+}
+
+#contact_name {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+#firstN {
+  margin-right: 1rem;
+  font-style: italic;
+}
+
+.form-containter .btn {
+  padding: 8px 34px;
+  background-color: white;
+}
+
+.form-containter .btn p {
+  color: #000;
+  padding: 0;
+}
+.btn:before,
+.btn > :first-child:before {
+  border-color: #000;
+}
+
+/* Contact Responisve */
+@media screen and /* (max-width: 420px) */ (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .form-containter {
+    width: 100%;
+    /* padding: 1rem; */
+    padding: 1rem 4rem 1rem 0rem;
+  }
+
+  .form-containter form {
+    margin: 0;
+  }
+
+  .contact-container .contact-left-cont h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-container .contact-left-cont p {
+    font-size: 0.9rem;
+  }
+
+  #contact_name {
+    flex-direction: column;
+  }
+
+  #firstN {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 588px) and (min-width: 280px) {
+  .contact-landing h1 br {
+    display: none;
+  }
+}
